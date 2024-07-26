@@ -48,6 +48,7 @@ if opcao == 1:
 
     print(f"{A} + {B}")
     soma(A,B)
+    input("Aperte qualquer tecla para fechar! ")
     
 elif opcao == 2:
     
@@ -61,6 +62,7 @@ elif opcao == 2:
 
     print(f"{A} - {B}")
     sub(A,B)
+    input("Aperte qualquer tecla para fechar! ")
     
 elif opcao == 3:
     
@@ -75,6 +77,7 @@ elif opcao == 3:
 
     print(f"{A} x {B}")
     mult(A,B)
+    input("Aperte qualquer tecla para fechar! ")
     
 elif opcao == 4:
     
@@ -88,6 +91,7 @@ elif opcao == 4:
 
     print(f"{A} ÷ {B}")
     div(A,B)
+    input("Aperte qualquer tecla para fechar! ")
     
 else:
     print("Tente novamente e digite um dos valores informados!!")
@@ -100,5 +104,5 @@ else:
         i = i - 1
         time.sleep(1)
         
-    else:
+    if i == 0:
         sys.exit()
